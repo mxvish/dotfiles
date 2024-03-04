@@ -4,6 +4,7 @@ let &t_EI.="\e[1 q"
 let g:coc_disable_startup_warning = 1
 
 set autoread
+set background=dark
 set backspace=indent,eol,start
 set cursorline
 set foldmethod=indent
