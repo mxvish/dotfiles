@@ -1,7 +1,6 @@
-let &t_SI.="\e[5 q"
+let &t_SI.="\e[4 q"
 let &t_SR.="\e[5 q"
 let &t_EI.="\e[1 q"
-let g:coc_disable_startup_warning = 1
 
 set autoread
 set background=dark
@@ -10,13 +9,14 @@ set cursorline
 set foldmethod=indent
 set expandtab
 set hlsearch
-set ignorecase
 set incsearch
+set nocompatible
 set noswapfile
 set nu
 set shiftwidth=4
 set smartindent
 set tabstop=4
+set wildmode=list:longest   
 syntax enable
 
 nnoremap <C-h> :wincmd h<CR>
@@ -42,7 +42,7 @@ inoremap <C-d> <Del>
 inoremap <C-e> <End>
 inoremap <C-f> <Right>
 inoremap <C-h> <BackSpace>
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+nnoremap <C-n> :vsplit<CR>
 
-nmap <Esc><Esc> :nohlsearch<Esc>
-autocmd TextChanged,TextChangedI <buffer> write 
+nmap <Esc> :nohlsearch<Esc>
+autocmd TextChanged,TextChangedI <buffer> write
