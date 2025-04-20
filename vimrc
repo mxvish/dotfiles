@@ -15,7 +15,7 @@ set noswapfile
 set nu
 set shiftwidth=4
 set smartindent
-set tabstop=4
+set tabstop=2
 set wildmode=list:longest   
 syntax enable
 
