@@ -13,7 +13,7 @@ set incsearch
 set nocompatible
 set noswapfile
 set nu
-set shiftwidth=4
+set shiftwidth=2
 set smartindent
 set tabstop=2
 set wildmode=list:longest   
