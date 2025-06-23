@@ -6,17 +6,14 @@ set autoread
 set background=dark
 set backspace=indent,eol,start
 set cursorline
-"set foldmethod=indent
-set expandtab
 set hlsearch
 set incsearch
 set nocompatible
 set noswapfile
 set nu
-set shiftwidth=2
+set shiftwidth=4
 set smartindent
 set tabstop=2
-set wildmode=list:longest   
 syntax enable
 
 nnoremap <C-h> :wincmd h<CR>
@@ -31,10 +28,10 @@ inoremap { {}<Left>
 inoremap [ []<Left>
 inoremap ' ''<Left>
 inoremap " ""<Left>
+inoremap ` ``<Left>
 inoremap ( ()<Left>
 inoremap 「 「」<Left>
 inoremap （ （）<Left>
-inoremap ` ``<Left>
 
 inoremap <C-a> <Home>
 inoremap <C-b> <Left>
