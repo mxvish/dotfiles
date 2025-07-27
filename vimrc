@@ -6,6 +6,7 @@ set autoread
 set background=dark
 set backspace=indent,eol,start
 set cursorline
+set foldmethod=indent
 set hlsearch
 set incsearch
 set nocompatible
