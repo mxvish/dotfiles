@@ -1,5 +1,5 @@
-# vimrc
-vim configuration file for macos and linux
+# dotfiles
+configuration files for macos and linux
 
 # Installation
 
