@@ -7,3 +7,9 @@
 (load-theme 'tango-dark t)
 
 (setq make-backup-files nil)
+
+(global-company-mode t)
+(setq company-minimum-prefix-length 1)
+
+(with-eval-after-load 'company
+  (define-key company-active-map (kbd "C-h") #'delete-backward-char))
