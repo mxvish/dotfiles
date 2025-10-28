@@ -9,6 +9,8 @@
 (setq auto-save-default nil)
 (setq make-backup-files nil)
 
+(setq-default tab-width 2)
+
 (global-company-mode t)
 (setq company-minimum-prefix-length 1)
 
