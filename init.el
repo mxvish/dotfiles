@@ -6,6 +6,7 @@
 ;; Load a built-in theme
 (load-theme 'tango-dark t)
 
+(setq auto-save-default nil)
 (setq make-backup-files nil)
 
 (global-company-mode t)
