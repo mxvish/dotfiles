@@ -2,17 +2,15 @@ echo ''
 
 check_diff(){
   local filename="$1"
-  diff -q $filename  /home/$HOSTNAME/$filename
+  local targetpath="$2$filename"
 
+  diff -q $filename $targetpath 
   if [ $? -ne 0 ]; then
-    echo "WARNING: The file $filename is different from $HOME/$filename."
+    echo "WARNING: The file $filename is different from $targetpath."
   fi
 }
 
-files=(
-  ".bashrc"
-)
-
-for i in "${files}";
-  do check_diff $i;
-done
+if [ $uname -eq "Linux" ]; then
+  check_diff ".vimrc" "/home/$HOSTNAME/"
+  check_diff "init.el" "/home/$HOSTNAME/.emacs.d/"
+fi
