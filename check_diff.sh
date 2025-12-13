@@ -10,7 +10,7 @@ check_diff(){
   fi
 }
 
-if [ $uname -eq "Linux" ]; then
+if [ "$uname" = "Linux" ]; then
   check_diff ".vimrc" "/home/$HOSTNAME/"
   check_diff "init.el" "/home/$HOSTNAME/.emacs.d/"
 fi
