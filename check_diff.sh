@@ -7,7 +7,7 @@ check_diff(){
   diff -q $filename $targetpath 
 }
 
-if [ "$uname" = "Linux" ]; then
+if [ "$(uname)" = "Linux" ]; then
   check_diff ".vimrc" "/home/$HOSTNAME/"
   check_diff "init.el" "/home/$HOSTNAME/.emacs.d/"
 fi
