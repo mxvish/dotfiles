@@ -14,7 +14,7 @@ set nocompatible
 set noswapfile
 set nu
 set shiftwidth=4
-set smartindent
+"set smartindent
 set tabstop=2
 syntax enable
 
