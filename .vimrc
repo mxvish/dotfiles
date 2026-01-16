@@ -13,8 +13,8 @@ set incsearch
 set nocompatible
 set noswapfile
 set nu
+""set smartindent
 set shiftwidth=4
-"set smartindent
 set tabstop=2
 syntax enable
 
