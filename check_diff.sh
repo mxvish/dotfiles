@@ -15,5 +15,6 @@ if [ "$(uname)" = "Linux" ]; then
   check_diff "profile" "/home/$HOSTNAME/.config/fcitx5/"
 fi
 
-#if [ "$(uname)" = "FreeBSD" ]; then
-#fi
+if [ "$(uname)" = "FreeBSD" ]; then
+  check_diff "00-keyboard.conf" "/usr/local/etc/X11/xorg.conf.d/"
+fi
