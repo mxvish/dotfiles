@@ -14,3 +14,6 @@ if [ "$(uname)" = "Linux" ]; then
   check_diff "config" "/home/$HOSTNAME/.config/fcitx5/"
   check_diff "profile" "/home/$HOSTNAME/.config/fcitx5/"
 fi
+
+#if [ "$(uname)" = "FreeBSD" ]; then
+#fi
