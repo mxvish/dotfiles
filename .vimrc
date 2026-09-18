@@ -43,5 +43,4 @@ inoremap <C-f> <Right>
 inoremap <C-h> <BackSpace>
 nnoremap <C-n> :vsplit<CR>
 
-nmap <Esc> :nohlsearch<Esc>
 autocmd TextChanged,TextChangedI <buffer> write
