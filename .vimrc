@@ -18,6 +18,10 @@ set shiftwidth=4
 set tabstop=2
 syntax enable
 
+" set appearance like nvim
+set laststatus=2
+set shortmess-=S
+
 nnoremap <C-h> :wincmd h<CR>
 nnoremap <C-j> :wincmd j<CR>
 nnoremap <C-k> :wincmd k<CR>
@@ -43,4 +47,5 @@ inoremap <C-f> <Right>
 inoremap <C-h> <BackSpace>
 nnoremap <C-n> :vsplit<CR>
 
+nmap <Esc> :nohlsearch<Esc>
 autocmd TextChanged,TextChangedI <buffer> write
