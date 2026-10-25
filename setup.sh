@@ -8,3 +8,7 @@ mv init.el /home/$(hostname)/.emacs.d/
 
 mv config /home/$(hostname)/.config/fcitx5
 mv profile /home/$(hostname)/.config/fcitx5
+
+# setup tmux config
+mkdir -p /home/$(hostname)/.config/tmux
+mv .config/tmux/tmux.conf /home/$(hostname)/.config/tmux
